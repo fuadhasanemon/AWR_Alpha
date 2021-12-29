@@ -1,0 +1,218 @@
+@import "reset";
+@import "var";
+@import "fonts";
+
+
+//home-about start
+
+.home-about{
+  position: relative;
+  background-color: #8F8F8F;
+  @media(max-width: 991px){
+    padding-bottom: 80px!important;
+    padding-top: 80px!important;
+  }
+  //&:after{
+  //  position: absolute;
+  //  height: 100%;
+  //  width: 100%;
+  //  top: 0;
+  //  bottom: 0;
+  //  left: 0;
+  //  right: 0;
+  //  content: '';
+  //  background: linear-gradient(to left, rgba(255,255,255,1), rgba(255,255,255,0.8));
+  //  z-index: 5;
+  //}
+  //.loader{
+  //  &:before{
+  //    position: absolute;
+  //    height: 100%;
+  //    width: 100%;
+  //    top: 0;
+  //    bottom: 0;
+  //    left: 0;
+  //    right: 0;
+  //    content: '';
+  //    background: linear-gradient(to left, rgba(255,255,255,1), rgba(255,255,255,0.8));
+  //    z-index: 5;
+  //  }
+  //}
+  .fill-color{
+    @extend %position;
+  }
+  .col-sm-4{
+    z-index: 10;
+    h1{
+      font-family: 'Sofia Pro', sans-serif;
+      font-size: 40px;
+      font-weight: 200;
+      line-height: 40px;
+      color: #002155;
+      @media(max-width: 575px){
+        font-size: 28px;
+        line-height: 30px;
+      }
+    }
+    @media(max-width: 991px){
+      flex: 0 0 100%;
+      max-width: 100%;
+      h1{
+        margin-bottom: 40px!important;
+      }
+    }
+  }
+  .col-sm-7{
+    z-index: 10;
+    @media(max-width: 991px){
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    @media(max-width: 575px){
+      padding-right: 15px;
+      margin-left: 0!important;
+    }
+    @media(max-width: 991px){
+      //margin-right: 15px;
+      //margin-left: 15px;
+      margin: auto;
+    }
+    .about-btn{
+      margin-top: 50px;
+      margin-bottom: 50px;
+      @media(max-width: 575px){
+        margin-top: 40px;
+        margin-bottom: 40px;
+
+      }
+      //.dc-btn{
+      //  text-transform: uppercase;
+      //  border-radius: 0;
+      //  padding:15px 25px;
+      //  border: 0 solid #6C86FF;
+      //  background-size: 50%;
+      //  span{
+      //    font-size: 14px;
+      //    font-weight: 300;
+      //    line-height: 36px;
+      //    color: #0A0A0A;
+      //
+      //  }
+      //}
+    }
+
+    p{
+      font-family: 'Sofia Pro', sans-serif;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 30px;
+      color: rgba(27, 29, 29, 0.5);
+      z-index: 20;
+      @media(max-width: 575px){
+        font-size: 18px;
+        line-height: 27px;
+      }
+
+    }
+    .about-img{
+      position: relative;
+      .about-img-two{
+        position: relative;
+        padding-top: calc(350 / 670 * 100%);
+        @media(max-width: 991px){
+          position: relative;
+          padding-top: calc(250 / 375 * 100%);
+
+        }
+        img{
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      a{
+        @extend %position;
+        z-index: 555;
+      }
+      img{
+        object-fit: contain;
+        filter: grayscale(1);
+        transition: all 0.5s ease-in-out;
+      }
+
+      &:hover{
+        img{
+          filter: none;
+        }
+      }
+      .about-icon{
+        position: absolute;
+        z-index: 55;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        //@media(max-width: 575px){
+        //  position: absolute;
+        //  top: 45%;
+        //  left: 45%;
+        //
+        //}
+        //@media(max-width: 375px){
+        //  position: absolute;
+        //  top: 40%;
+        //  left: 40%;
+        //
+        //}
+      }
+      &:hover{
+        .icon-inner{
+          position: relative;
+          &:before, &:after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            border-radius: 50%;
+
+          }
+          &:after{
+            background: #FFFFFF;
+            z-index: -1;
+            animation: pulse 1000ms infinite;
+          }
+          @-webkit-keyframes pulse {
+            0%{
+              transform: scale(0.95);
+              opacity: 0.5;
+            }
+            100%{
+              transform: scale(1.7);
+              opacity: 0;
+            }
+          }
+
+        }
+      }
+      .icon-inner{
+        img{
+          filter: none;
+        }
+      }
+    }
+  }
+}
+
+//home-about end
+
+
+
+
+
+
+

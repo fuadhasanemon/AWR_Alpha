@@ -1,0 +1,628 @@
+@import "reset";
+@import "var";
+@import "fonts";
+
+
+//Company page start 'fuad'
+
+.companies {
+  background-color: #FBFBFB;
+
+  .container {
+
+    .row {
+      margin-bottom: -40px;
+      @media (max-width: 767px) {
+        margin-bottom: -20px;
+      }
+    }
+
+    .title {
+      color: #1B1D1D;
+      margin-bottom: 40px;
+
+      @media (max-width: 767px) {
+        font-size: 28px;
+        line-height: 30px;
+        font-weight: 200;
+      }
+    }
+
+    .companies__column {
+      margin-bottom: 40px;
+
+      @media (max-width: 991px) {
+        flex: 0 0 33.3333%;
+        max-width: 33.3333%;
+      }
+
+      @media (max-width: 767px) {
+        flex: 0 0 50%;
+        max-width: 50%;
+        margin-bottom: 20px;
+      }
+
+
+      // &:nth-last-child(-n+3) {
+      //   margin-bottom: 0;
+      // }
+
+      .card {
+
+        min-height: 100%;
+        box-shadow: rgba(0, 0, 0, .10) 0 0 25px;
+        border-radius: 0;
+        border: none;
+
+        a {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          transition: .6s all ease;
+          z-index: 2;
+        }
+
+        .companies__card__img {
+          background-color: #4054B2;
+          padding-top: 66.67%;
+          position: relative;
+
+          img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+
+        .card-body {
+          padding: 30px 20px 30px;
+
+          p {
+            font-size: 20px;
+            line-height: 25px;
+            font-weight: 500;
+            color: #1B1D1D;
+            text-align: center;
+            text-transform: capitalize;
+
+            @media (max-width: 1200px) {
+              font-size: 18px;
+              line-height: 20px;
+            }
+          }
+        }
+      }
+
+      @media (max-width: 767px) {
+        &:nth-of-type(odd){
+          padding-right: 7.5px;
+        }
+
+        &:nth-of-type(even){
+          padding-left: 7.5px;
+        }
+      }
+
+    }
+  }
+}
+
+//Company page end 'fuad'
+
+
+//csr page start 'fuad'
+
+.csr {
+  background-color: #FBFBFB;
+
+  .container {
+
+    .row {
+      margin-bottom: -40px;
+      @media (max-width: 767px) {
+        margin-bottom: -20px;
+      }
+    }
+
+    .title {
+      color: #1B1D1D;
+      margin-bottom: 40px;
+
+      @media (max-width: 767px) {
+        font-size: 28px;
+        line-height: 30px;
+        font-weight: 200;
+      }
+    }
+
+    .csr__column {
+      margin-bottom: 40px;
+
+      @media (max-width: 991px) {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+
+      @media (max-width: 767px) {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 30px;
+
+      }
+
+      .card {
+        // flex: 0 0 calc(33.333% - 30px);
+        filter: grayscale(1);
+        transition: .6s all ease;
+        box-shadow: rgba(0, 0, 0, .10) 0 0 25px;
+        border-radius: 0;
+        border: none;
+        min-height: 100%;
+
+        &:hover {
+          filter: grayscale(0);
+          transition: .6s all ease;
+        }
+
+        a {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          transition: .6s all ease;
+          z-index: 2;
+        }
+
+        .csr__card__img {
+          padding-top: 67.60%;
+          position: relative;
+
+          img {
+            border-radius: 0;
+          }
+        }
+
+
+
+        .card-body {
+          padding: 30px 20px 30px;
+
+          h3 {
+            margin-bottom: 10px;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 30px;
+
+          }
+
+          p {
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 500;
+            color: #1B1D1D;
+            text-align: left;
+
+          }
+        }
+      }
+
+    }
+  }
+}
+
+//csr page end 'fuad'
+
+//Clients page starts 'fuad'
+
+.clients {
+  background-color: #FBFBFB;
+
+  .container {
+
+    .row {
+      margin-bottom: -40px;
+      @media (max-width: 767px) {
+        margin-bottom: -20px;
+      }
+    }
+
+    .title {
+      color: #1B1D1D;
+      margin-bottom: 40px;
+
+      @media (max-width: 767px) {
+        font-size: 28px;
+        line-height: 30px;
+        font-weight: 200;
+      }
+    }
+
+
+    .clients__column {
+      margin-bottom: 40px;
+
+      @media (max-width: 991px) {
+        flex: 0 0 33.3333%;
+        max-width: 33.3333%;
+      }
+
+      @media (max-width: 767px) {
+        flex: 0 0 50%;
+        max-width: 50%;
+        margin-bottom: 20px;
+      }
+
+      // &:nth-last-child(-n+3) {
+      //   margin-bottom: 0;
+      // }
+
+      .card {
+
+        min-height: 100%;
+        //box-shadow: rgba(0, 0, 0, .10) 0 0 25px;
+        border-radius: 0;
+        border: 1px solid #E9E9E9;
+        filter: grayscale(1);
+        transition: .6s all ease;
+
+        &:hover {
+          filter: grayscale(0);
+          transition: .6s all ease;
+        }
+
+        a {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          transition: .6s all ease;
+          z-index: 2;
+        }
+
+        .clients__card__img {
+          background-color: #FFFFFF;
+          padding-top: 66.67%;
+          position: relative;
+          border-bottom: 1px solid #E9E9E9;
+
+          img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+
+        .card-body {
+          padding: 30px 20px 30px;
+
+          p {
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 500;
+            color: #1B1D1D;
+            text-align: center;
+            text-transform: capitalize;
+
+            @media (max-width: 767px) {
+              font-size: 16px;
+              line-height: 24px;
+            }
+          }
+        }
+      }
+
+      @media (max-width: 767px) {
+        &:nth-of-type(odd){
+          padding-right: 7.5px;
+        }
+
+        &:nth-of-type(even){
+          padding-left: 7.5px;
+        }
+      }
+    }
+  }
+}
+
+//Clients page end 'fuad'
+
+//News and events page starts here Fuad
+
+.news {
+  background-color: #FBFBFB;
+
+  .container {
+
+    .row {
+      margin-bottom: -40px;
+      @media (max-width: 767px) {
+        margin-bottom: -20px;
+      }
+    }
+
+    .title {
+      color: #1B1D1D;
+      margin-bottom: 40px;
+
+      @media (max-width: 767px) {
+        font-size: 28px;
+        line-height: 30px;
+        font-weight: 200;
+      }
+    }
+
+    .news__column {
+      margin-bottom: 40px;
+
+      @media (max-width: 991px) {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+
+      @media (max-width: 767px) {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 30px;
+
+      }
+
+      .card {
+        // flex: 0 0 calc(33.333% - 30px);
+
+        transition: .6s all ease;
+        box-shadow: rgba(0, 0, 0, .10) 0 0 25px;
+        border-radius: 0;
+        border: none;
+        min-height: 100%;
+        filter: grayscale(1);
+
+
+        &:hover {
+          filter: grayscale(0);
+          transition: .6s all ease;
+
+        }
+
+
+        a {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          transition: .6s all ease;
+          z-index: 2;
+        }
+
+        .news__card-img {
+          padding-top: 67.60%;
+          position: relative;
+
+          img {
+            border-radius: 0;
+          }
+        }
+
+        .card-body {
+          padding: 30px 20px 30px;
+
+          h3 {
+
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 30px;
+
+          }
+
+          .card-date {
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 500;
+            text-align: left;
+            color: #4054B2;
+            z-index: 5000;
+            margin-bottom: 10px;
+          }
+        }
+      }
+
+    }
+  }
+}
+
+//---------------
+
+.events {
+  background-color: #E7EAE9;
+
+  .container {
+
+    .row {
+      margin-bottom: -40px;
+      @media (max-width: 767px) {
+        margin-bottom: -20px;
+      }
+    }
+
+    .title {
+      color: #1B1D1D;
+      margin-bottom: 40px;
+
+      @media (max-width: 767px) {
+        font-size: 28px;
+        line-height: 30px;
+        font-weight: 200;
+      }
+    }
+
+    .events__column {
+      margin-bottom: 40px;
+
+      @media (max-width: 991px) {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+
+      @media (max-width: 767px) {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 30px;
+
+      }
+
+      .card {
+        // flex: 0 0 calc(33.333% - 30px);
+
+        transition: .6s all ease;
+        box-shadow: rgba(0, 0, 0, .10) 0 0 25px;
+        border-radius: 0;
+        border: none;
+        min-height: 100%;
+        filter: grayscale(1);
+
+
+        &:hover {
+          filter: grayscale(0);
+          transition: .6s all ease;
+
+        }
+
+
+        a {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          transition: .6s all ease;
+          z-index: 2;
+        }
+
+        .events__card-img {
+          padding-top: 67.60%;
+          position: relative;
+
+          img {
+            border-radius: 0;
+          }
+        }
+
+        .card-body {
+          padding: 30px 20px 30px;
+
+          h3 {
+
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 30px;
+
+          }
+
+          .card-date {
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 500;
+            text-align: left;
+            color: #4054B2;
+            z-index: 5000;
+            margin-bottom: 10px;
+          }
+        }
+      }
+
+    }
+  }
+}
+
+//News and events page starts here Fuad
+
+//features-amenities Project details page start Fuad
+
+.features-amenities {
+  background-color: #F9F9F9;
+  .container {
+    h3 {
+      margin-bottom: 40px;
+      color: #1B1D1D;
+
+      @media (max-width: 767px) {
+        font-size: 28px;
+        line-height: 30px;
+        font-weight: 200;
+
+      }
+    }
+
+    .row {
+
+      ul {
+        li {
+          font-size: 16px;
+          line-height: 24px;
+          font-weight: 400;
+          align-items: center;
+          display: flex;
+          padding: 20px 30px;
+          text-transform: capitalize;
+          color: #1B1D1D;
+          min-height: 100%;
+
+          @media (min-width: 768px) and (max-width: 1350px) {
+            height: 90px;
+
+          }
+        }
+      }
+      .features-amenities__column-one {
+        ul {
+          li {
+            &:nth-child(odd) {
+              background-color: #E7EAE9;
+
+            }
+            &:nth-child(even) {
+              background-color: #F5F5F5;
+              border-bottom: 1px solid rgba(10, 10, 10, .10);
+            }
+          }
+
+          @media (min-width: 991px) {
+            &:nth-of-type(odd){
+              padding-right: 25px;
+            }
+          }
+        }
+      }
+
+      .features-amenities__column-two {
+        ul {
+          li {
+            &:nth-child(odd) {
+              border-bottom: 1px solid rgba(10, 10, 10, .10);
+              background-color: #F5F5F5;
+            }
+            &:nth-child(even) {
+              background-color: #E7EAE9;
+
+            }
+          }
+
+          @media (min-width: 991px) {
+            &:nth-of-type(odd){
+              padding-left: 25px;
+              padding-right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//features-amenities Project details page start Fuad
